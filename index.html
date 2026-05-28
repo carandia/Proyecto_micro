@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Rutatlantica</title>
+
+  <link rel="stylesheet" href="Estilo/estilo.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <header class="navbar">
+
+    <div class="logo">
+      <img src="img/Logo.svg" alt="Rutatlantica">
+    </div>
+
+    <nav>
+      <a href="#">Horarios</a>
+      <a href="#">Paradas</a>
+      <a href="#">Servicios</a>
+    </nav>
+
+    <button class="btn-primary">
+      Reservar Ahora
+    </button>
+
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-text">
+
+      <span class="small-text">
+        PUNTO DE PARTIDA: TERMINAL ALMAGRO
+      </span>
+
+      <h1>
+        Tu viaje a la costa
+        <span>comienza aquí.</span>
+      </h1>
+
+      <p>
+        Somos una empresa Argentina de Transporte terrestre con más de 40 años de trayectoria.
+      </p>
+
+      <div class="hero-buttons">
+
+        <button class="btn-dark">
+          Ver Salidas
+        </button>
+
+        <button class="btn-outline">
+          Explorar Recorrido
+        </button>
+
+      </div>
+
+    </div>
+
+    <div class="hero-image">
+      <img src="img/Bus.png" alt="Bus">
+    </div>
+
+  </section>
+
+  <!-- PARADAS -->
+
+  <section class="stops-section">
+
+    <div class="stops-list">
+
+      <h2>Nuestras paradas</h2>
+
+      <div class="timeline">
+
+  <div class="stop active">
+    <div class="circle"></div>
+
+    <div class="stop-info">
+      <h4>Almagro Terminal</h4>
+      <span>PUNTO DE PARTIDA</span>
+    </div>
+  </div>
+
+  <div class="stop">
+    <div class="circle"></div>
+
+    <div class="stop-info">
+      <h4>San Clemente del Tuyú</h4>
+      <span>INTERMEDIA</span>
+    </div>
+  </div>
+
+  <div class="stop">
+    <div class="circle"></div>
+
+    <div class="stop-info">
+      <h4>Las Toninas</h4>
+      <span>INTERMEDIA</span>
+    </div>
+  </div>
+
+  <div class="stop">
+    <div class="circle"></div>
+
+    <div class="stop-info">
+      <h4>Santa Teresita</h4>
+      <span>INTERMEDIA</span>
+    </div>
+  </div>
+
+  <div class="stop">
+    <div class="circle"></div>
+
+    <div class="stop-info">
+      <h4>Mar del Tuyú</h4>
+      <span>INTERMEDIA</span>
+    </div>
+  </div>
+
+  <div class="stop">
+    <div class="circle"></div>
+
+    <div class="stop-info">
+      <h4>San Bernardo</h4>
+      <span>INTERMEDIA</span>
+    </div>
+  </div>
+
+  <div class="stop">
+    <div class="circle"></div>
+
+    <div class="stop-info">
+      <h4>Pinamar</h4>
+      <span>INTERMEDIA</span>
+    </div>
+  </div>
+
+  <div class="stop">
+    <div class="circle"></div>
+
+    <div class="stop-info">
+      <h4>Villa Gesell</h4>
+      <span>INTERMEDIA</span>
+    </div>
+  </div>
+
+  <div class="stop">
+    <div class="circle"></div>
+
+    <div class="stop-info">
+      <h4>Mar del Plata</h4>
+      <span>DESTINO COSTERO</span>
+    </div>
+  </div>
+
+</div>
+    </div>
+
+    <div class="map-container">
+      <img src="img/Mapa.png" alt="Mapa recorrido">
+    </div>
+
+  </section>
+
+  <!-- SERVICIOS -->
+
+  <section class="services">
+
+    <div class="section-title">
+
+      <h2>Elevando tu Experiencia de Viaje</h2>
+
+      <p>
+        Redefinimos los viajes de larga distancia con servicios premium.
+      </p>
+
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card large">
+        <h3>Confort de Primera Clase</h3>
+        <p>
+          Asientos reclinables y servicio premium para un viaje de descanso.
+        </p>
+      </div>
+
+      <div class="service-card pink">
+        <h3>Accesibilidad</h3>
+        <p>
+          Unidades equipadas con rampas y espacios adaptados.
+        </p>
+      </div>
+
+      <div class="service-card small">
+        <h3>Climatización</h3>
+      </div>
+
+      <div class="service-card small">
+        <h3>Personal Calificado</h3>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- HORARIOS -->
+
+  <section class="schedule">
+
+    <div class="schedule-header">
+
+      <div>
+        <h2>Salidas desde Terminal Almagro</h2>
+        <p>Servicio diario con alta frecuencia hacia la Costa Atlántica.</p>
+      </div>
+
+      <div class="tabs">
+        <button class="active">Días de semana</button>
+        <button>Fines de semana</button>
+      </div>
+
+    </div>
+
+    <div class="table">
+
+      <div class="table-row header">
+        <span>Horario</span>
+        <span>Servicio</span>
+        <span>Frecuencia</span>
+        <span>Destino</span>
+        <span>Acción</span>
+      </div>
+
+      <div class="table-row">
+        <span>06:00 AM</span>
+        <span class="badge">Cama</span>
+        <span>Cada 60 min</span>
+        <span>Mar del Plata Directo</span>
+        <span class="action">Seleccionar</span>
+      </div>
+
+      <div class="table-row">
+        <span>07:30 AM</span>
+        <span class="badge gray">Semicama</span>
+        <span>Cada 30 min</span>
+        <span>Corredor Todas las Paradas</span>
+        <span class="action">Seleccionar</span>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <h2>¿Todo listo para tu escapada a la costa?</h2>
+
+    <div class="search-box">
+
+      <input type="text" placeholder="¿A dónde vas?">
+
+      <button>
+        Buscar Recorridos
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <h3>Rutatlantica</h3>
+
+    <div class="footer-links">
+      <a href="#">Términos</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Contacto</a>
+    </div>
+
+    <p>© 2024 Rutatlantica</p>
+
+  </footer>
+
+  
+
+</body>
+</html>
