@@ -25,12 +25,12 @@
     </div>
 
     <nav>
-      <a href="#">Horarios</a>
-      <a href="#">Paradas</a>
-      <a href="#">Servicios</a>
+      <a href="#horarios">Horarios</a>
+      <a href="#paradas">Paradas</a>
+      <a href="#servicios">Servicios</a>
     </nav>
 
-    <button class="btn-primary">
+    <button class="btn-primary" onclick="location.href='#horarios'">
       Reservar Ahora
     </button>
 
@@ -57,12 +57,12 @@
 
       <div class="hero-buttons">
 
-        <button class="btn-dark">
-          Ver Salidas
+        <button class="btn-dark" onclick="location.href='#horarios'">
+        Ver Salidas
         </button>
 
-        <button class="btn-outline">
-          Explorar Recorrido
+        <button class="btn-outline" onclick="location.href='#paradas'">
+        Explorar Recorrido
         </button>
 
       </div>
@@ -77,7 +77,7 @@
 
   <!-- PARADAS -->
 
-  <section class="stops-section">
+  <section id="paradas" class="stops-section">
 
     <div class="stops-list">
 
@@ -87,6 +87,9 @@
 
   <div class="stop active">
     <div class="circle"></div>
+    <img src="img/almagro.jpg"
+       alt="Terminal Almagro"
+       class="stop-photo">
 
     <div class="stop-info">
       <h4>Almagro Terminal</h4>
@@ -96,6 +99,9 @@
 
   <div class="stop">
     <div class="circle"></div>
+    <img src="img/sanclemente.jpg"
+         alt="San Clemente del Tuyú"
+         class="stop-photo">
 
     <div class="stop-info">
       <h4>San Clemente del Tuyú</h4>
@@ -105,6 +111,9 @@
 
   <div class="stop">
     <div class="circle"></div>
+    <img src="img/lastoninas.jpg"
+     class="stop-photo"
+     alt="Las Toninas">
 
     <div class="stop-info">
       <h4>Las Toninas</h4>
@@ -114,6 +123,9 @@
 
   <div class="stop">
     <div class="circle"></div>
+    <img src="img/santateresita.jpg"
+     class="stop-photo"
+     alt="Santa Teresita">
 
     <div class="stop-info">
       <h4>Santa Teresita</h4>
@@ -123,6 +135,9 @@
 
   <div class="stop">
     <div class="circle"></div>
+    <img src="img/mardeltuyu.jpg"
+     class="stop-photo"
+     alt="Mar del Tuyú">
 
     <div class="stop-info">
       <h4>Mar del Tuyú</h4>
@@ -132,6 +147,9 @@
 
   <div class="stop">
     <div class="circle"></div>
+    <img src="img/sanbernardo.jpg"
+     class="stop-photo"
+     alt="San Bernardo">
 
     <div class="stop-info">
       <h4>San Bernardo</h4>
@@ -141,6 +159,9 @@
 
   <div class="stop">
     <div class="circle"></div>
+    <img src="img/pinamar.jpg"
+     class="stop-photo"
+     alt="Pinamar">
 
     <div class="stop-info">
       <h4>Pinamar</h4>
@@ -150,6 +171,9 @@
 
   <div class="stop">
     <div class="circle"></div>
+    <img src="img/villagesell.jpg"
+     class="stop-photo"
+     alt="Villa Gesell">
 
     <div class="stop-info">
       <h4>Villa Gesell</h4>
@@ -159,6 +183,9 @@
 
   <div class="stop">
     <div class="circle"></div>
+    <img src="img/mardelplata.jpg"
+     class="stop-photo"
+     alt="Mar del Plata">
 
     <div class="stop-info">
       <h4>Mar del Plata</h4>
@@ -177,7 +204,7 @@
 
   <!-- SERVICIOS -->
 
-  <section class="services">
+  <section id="servicios" class="services">
 
     <div class="section-title">
 
@@ -192,6 +219,10 @@
     <div class="services-grid">
 
       <div class="service-card large">
+          <img src="img/asientos.jpg"
+              alt="Asientos reclinables"
+              class="service-photo">
+
         <h3>Confort de Primera Clase</h3>
         <p>
           Asientos reclinables y servicio premium para un viaje de descanso.
@@ -199,6 +230,10 @@
       </div>
 
       <div class="service-card pink">
+          <img src="img/accesibilidad.jpg"
+              alt="Accesibilidad"
+              class="service-photo">
+
         <h3>Accesibilidad</h3>
         <p>
           Unidades equipadas con rampas y espacios adaptados.
@@ -206,11 +241,21 @@
       </div>
 
       <div class="service-card small">
+          <img src="img/climatizacion.jpg"
+              alt="Climatización"
+              class="service-photo">
+
         <h3>Climatización</h3>
+
       </div>
 
       <div class="service-card small">
+          <img src="img/personal.jpg"
+              alt="Personal calificado"
+              class="service-photo">
+
         <h3>Personal Calificado</h3>
+
       </div>
 
     </div>
@@ -219,7 +264,7 @@
 
   <!-- HORARIOS -->
 
-  <section class="schedule">
+  <section id="horarios" class="schedule">
 
     <div class="schedule-header">
 
@@ -229,10 +274,15 @@
       </div>
 
       <div class="tabs">
-        <button class="active">Días de semana</button>
-        <button>Fines de semana</button>
-      </div>
+        <button id="btnSemana" class="active">
+          Días de semana
+        </button>
 
+        <button id="btnFin">
+          Fines de semana
+        </button>
+
+</div>
     </div>
 
     <div class="table">
@@ -246,21 +296,48 @@
       </div>
 
       <div class="table-row">
-        <span>06:00 AM</span>
-        <span class="badge">Cama</span>
-        <span>Cada 60 min</span>
-        <span>Mar del Plata Directo</span>
-        <span class="action">Seleccionar</span>
+
+        <span id="hora1">06:00 AM</span>
+
+        <span id="servicio1" class="badge">
+          Cama
+        </span>
+
+        <span id="frecuencia1">
+          Cada 60 min
+        </span>
+
+        <span id="destino1">
+          Mar del Plata Directo
+        </span>
+
+        <span id="accion1" class="action" style="cursor:pointer;">
+          Seleccionar
+        </span>
+
       </div>
 
       <div class="table-row">
-        <span>07:30 AM</span>
-        <span class="badge gray">Semicama</span>
-        <span>Cada 30 min</span>
-        <span>Corredor Todas las Paradas</span>
-        <span class="action">Seleccionar</span>
-      </div>
 
+        <span id="hora2">07:30 AM</span>
+
+        <span id="servicio2" class="badge gray">
+          Semicama
+        </span>
+
+        <span id="frecuencia2">
+          Cada 30 min
+        </span>
+
+        <span id="destino2">
+          Corredor Todas las Paradas
+        </span>
+
+        <span id="accion2" class="action" style="cursor:pointer;">
+          Seleccionar
+        </span>
+
+      </div>
     </div>
 
   </section>
@@ -273,10 +350,10 @@
 
     <div class="search-box">
 
-      <input type="text" placeholder="¿A dónde vas?">
+      <input type="text" id="destino" placeholder="¿A dónde vas?">
 
-      <button>
-        Buscar Recorridos
+      <button id="buscarDestino">
+        Ver disponibilidad
       </button>
 
     </div>
@@ -298,8 +375,130 @@
     <p>© 2024 Rutatlantica</p>
 
   </footer>
+<script>
 
-  
+const btnSemana = document.getElementById("btnSemana");
+const btnFin = document.getElementById("btnFin");
+
+const accion1 = document.getElementById("accion1");
+const accion2 = document.getElementById("accion2");
+
+/* ---------------- FUNCIONES ---------------- */
+function limpiarSeleccion(){
+
+    accion1.textContent = "Seleccionar";
+    accion2.textContent = "Seleccionar";
+
+    accion1.classList.remove("selected");
+    accion2.classList.remove("selected");
+
+}
+function mostrarSemana(){
+
+    btnSemana.classList.add("active");
+    btnFin.classList.remove("active");
+
+    document.getElementById("hora1").textContent = "06:00 AM";
+    document.getElementById("hora2").textContent = "07:30 AM";
+
+    document.getElementById("servicio1").textContent = "Cama";
+    document.getElementById("servicio2").textContent = "Semicama";
+
+    document.getElementById("frecuencia1").textContent = "Cada 60 min";
+    document.getElementById("frecuencia2").textContent = "Cada 30 min";
+
+    document.getElementById("destino1").textContent = "Mar del Plata Directo";
+    document.getElementById("destino2").textContent = "Corredor Todas las Paradas";
+    
+    document.getElementById("servicio1").className = "badge";
+    document.getElementById("servicio2").className = "badge gray";
+
+    limpiarSeleccion();
+}
+
+function mostrarFinDeSemana(){
+
+    btnFin.classList.add("active");
+    btnSemana.classList.remove("active");
+
+    document.getElementById("hora1").textContent = "08:00 AM";
+    document.getElementById("hora2").textContent = "10:00 AM";
+
+    document.getElementById("servicio1").textContent = "Suite Cama";
+    document.getElementById("servicio2").textContent = "Cama";
+
+    document.getElementById("frecuencia1").textContent = "Cada 90 min";
+    document.getElementById("frecuencia2").textContent = "Cada 60 min";
+
+    document.getElementById("destino1").textContent = "Mar del Plata";
+    document.getElementById("destino2").textContent = "Pinamar";
+
+    document.getElementById("servicio1").className = "badge";
+  document.getElementById("servicio2").className = "badge";
+
+    limpiarSeleccion();
+}
+
+/* ---------------- BOTONES ---------------- */
+
+btnSemana.addEventListener("click", mostrarSemana);
+
+btnFin.addEventListener("click", mostrarFinDeSemana);
+
+
+function seleccionar(opcion){
+
+    limpiarSeleccion();
+
+    opcion.textContent = "✔ Seleccionado";
+    opcion.classList.add("selected");
+
+}
+
+accion1.addEventListener("click", function(){
+
+    seleccionar(accion1);
+
+});
+
+accion2.addEventListener("click", function(){
+
+    seleccionar(accion2);
+
+});
+
+const botonBuscar = document.getElementById("buscarDestino");
+
+botonBuscar.addEventListener("click", function(){
+
+    const destino = document
+        .getElementById("destino")
+        .value
+        .toLowerCase()
+        .trim();
+
+    if(
+        destino === "mar del plata" ||
+        destino === "pinamar" ||
+        destino === "villa gesell" ||
+        destino === "san bernardo" ||
+        destino === "san clemente" ||
+        destino === "san clemente del tuyú" ||
+        destino === "las toninas" ||
+        destino === "santa teresita" ||
+        destino === "mar del tuyú"
+    ){
+
+        location.href="#paradas";
+
+    }else{
+
+        alert("Ese destino no se encuentra disponible.");
+
+    }
+
+});
+</script>
 
 </body>
 </html>
